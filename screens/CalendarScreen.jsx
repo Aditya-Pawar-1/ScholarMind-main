@@ -3,7 +3,6 @@ import {
     View,
     Text,
     FlatList,
-    TouchableOpacity,
     StyleSheet,
 } from 'react-native';
 import { useData } from '../context/DataContext';

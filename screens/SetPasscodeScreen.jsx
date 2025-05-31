@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   View,
   Text,
@@ -32,8 +32,7 @@ const SetPasscodeScreen = ({ navigation }) => {
     });
 
     if (result.success) {
-      // Allow login (pretend "biometric" is a valid passcode in AuthContext)
-      navigation.navigate('Subjects'); // or use AuthContext verifyPasscode('biometric')
+      navigation.navigate('Subjects');
     } else {
       Alert.alert('Authentication Failed', 'Could not authenticate using biometrics.');
     }

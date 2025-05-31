@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -15,7 +15,6 @@ const TimerScreen = ({ navigation }) => {
   const [timerInterval, setTimerInterval] = useState(null);
 
   useEffect(() => {
-    // Clean up interval on unmount
     return () => {
       if (timerInterval) {
         clearInterval(timerInterval);
@@ -71,7 +70,6 @@ const TimerScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      {/* Header */}
       <View style={styles.header}>
         <View style={styles.userInfo}>
           <View style={styles.avatar}>

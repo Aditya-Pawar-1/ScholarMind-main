@@ -2,12 +2,9 @@ import React, { useEffect } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../context/AuthContext";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// import { useNavigation } from "@react-navigation/native";
 
 const UserHeader = ({ username, onTimerPress }) => {
-  // const navigation = useNavigation();
   const { logout, } = useAuth();
 
   const handleLogout = async () => {
@@ -17,8 +14,6 @@ const UserHeader = ({ username, onTimerPress }) => {
       console.error("Failed to logout properly:", error);
     }
   };
-  
-
 
   return (
     <View style={styles.header}>

@@ -1,5 +1,3 @@
-// context/AuthContext.js
-
 import { createContext, useContext, useState, useEffect } from "react";
 import { onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from "firebase/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";

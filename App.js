@@ -16,7 +16,6 @@ import CalendarScreen from "./screens/CalendarScreen";
 import TrackerScreen from "./screens/TrackerScreen";
 import SubjectsScreen from "./screens/SubjectsScreen";
 import TimerScreen from "./screens/TimerScreen";
-import { AppState } from "react-native";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

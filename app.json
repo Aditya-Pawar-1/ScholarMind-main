@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "ScholarMind",
+    "slug": "ScholarMind",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.pawaradtitya200410.ScholarMind"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "86c5be56-f588-42d8-aae8-36bb6514dcbd"
+      }
+    }
+  }
+}
